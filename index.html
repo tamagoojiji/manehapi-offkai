@@ -127,6 +127,16 @@
     padding: 1px 4px;
     border-radius: 3px;
   }
+  .page-break { page-break-before: always; }
+  .seating-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 768px) {
+    .page-break { margin-top: 6mm; }
+  }
 </style>
 </head>
 <body>
@@ -225,5 +235,12 @@
 </table>
 
 </div>
+
+<div class="page page-break">
+<h1>会場 座席配置図</h1>
+<div class="subtitle">テーブルA〜H ／ 荷物置場・出入口</div>
+<img class="seating-img" src="seating.png" alt="座席配置図">
+</div>
+
 </body>
 </html>
